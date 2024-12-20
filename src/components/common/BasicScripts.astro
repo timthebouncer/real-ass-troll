@@ -220,8 +220,8 @@ import { UI } from 'astrowind:config';
                 const delay = this.animationCounter * this.delayBetweenAnimations;
                 this.animationCounter++;
 
-                target.style.transitionDelay = `${delay}ms`;
-                target.style.animationDelay = `${delay}ms`;
+                // target.style.transitionDelay = `${delay}ms`;
+                // target.style.animationDelay = `${delay}ms`;
 
                 if (target.classList.contains('intersect-once')) {
                   this.observer.unobserve(target);
@@ -230,7 +230,7 @@ import { UI } from 'astrowind:config';
             } else {
               target.setAttribute('no-intersect', '');
               target.removeAttribute('data-animated');
-              target.style.transitionDelay = '';
+              // target.style.transitionDelay = '';
               target.style.animationDelay = '';
 
               this.animationCounter = 0;
