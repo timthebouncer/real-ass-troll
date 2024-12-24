@@ -23,7 +23,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
-  
+  site: 'https://moonlit-zuccutto-b896f5.app',
   integrations: [
     tailwind({
       applyBaseStyles: false,

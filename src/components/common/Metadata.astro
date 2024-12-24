@@ -9,6 +9,7 @@ import type { MetaData } from '~/types';
 import { getCanonical } from '~/utils/permalinks';
 
 import { adaptOpenGraphImages } from '~/utils/images';
+import { fade } from 'astro:transitions';
 
 export interface Props extends MetaData {
   dontUseTitleTemplate?: boolean;
@@ -26,12 +27,13 @@ const {
 
 const seoProps: AstroSeoProps = merge(
   {
-    title: '',
+    title: 'BigHit',
     titleTemplate: '%s',
     canonical: canonical,
-    noindex: true,
-    nofollow: true,
-    description: undefined,
+    noindex: false,
+    nofollow: false,
+    description:
+      'BigHit111 - Your premier source for Korean artists, K-pop news, and entertainment updates. Discover the latest about Korean music and artists.',
     openGraph: {
       url: canonical,
       site_name: SITE?.name,

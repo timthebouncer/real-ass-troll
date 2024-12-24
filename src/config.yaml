@@ -1,6 +1,6 @@
 site:
   name: BigHit
-  site: 'https://gentle-biscotti-4fa6db.netlify.app'
+  site: 'https://moonlit-zuccutto-b896f5.netlify.app'
   base: '/'
   trailingSlash: false
 
@@ -9,9 +9,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: BigHit111
-    template: '%s — BigHit111'
-  description: "BigHit111 korea korean artists"
+    default: BigHit
+    template: '%s — BigHit'
+  description: "BigHit111 - Your premier source for Korean artists, K-pop news, and entertainment updates. Discover the latest about Korean music and artists."
   robots:
     index: true
     follow: true
@@ -22,7 +22,7 @@ metadata:
         width: 1200
         height: 628
     type: website
-    description: "BigHit111 korea korean artists"
+    description: "BigHit111 - Your premier source for Korean artists, K-pop news, and entertainment updates. Discover the latest about Korean music and artists."
 
 i18n:
   language: en
