@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink, getAsset, getHomePermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -174,4 +174,40 @@ export const footerData = {
     { ariaLabel: 'YouTube', icon: 'yt', href: '#' },
     { ariaLabel: 'Facebook', icon: 'fb', href: '#' },
   ],
+};
+
+export const menuData = {
+  links: [
+    {
+      title: 'HOME',
+      links: [
+        {
+          text: 'home',
+          href: getHomePermalink(),
+        }
+      ],
+    },
+    {
+      title: 'BTS',
+      links: [
+        { text: 'Developer API', href: '#' },
+        { text: 'Partners', href: '#' },
+        { text: 'Atom', href: '#' },
+        { text: 'Electron', href: '#' },
+        { text: 'AstroWind Desktop', href: '#' },
+      ],
+    },
+    {
+      title: 'LEE',
+      links: [
+        { text: 'About', href: '#' },
+        { text: 'Blog', href: '#' },
+        { text: 'Careers', href: '#' },
+        { text: 'Press', href: '#' },
+        { text: 'Inclusion', href: '#' },
+        { text: 'Social Impact', href: '#' },
+        { text: 'Shop', href: '#' },
+      ],
+    },
+  ]
 };
