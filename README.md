@@ -258,7 +258,7 @@ prefer.
 
 Clone this repository on your own GitHub account and deploy it to Netlify:
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
+[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/timthebouncer/real-ass-troll)
 
 #### Deploy to Vercel
 
