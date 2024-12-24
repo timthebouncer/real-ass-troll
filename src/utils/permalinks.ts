@@ -82,12 +82,11 @@ export const getPermalink = (slug = '', type = 'page'): string => {
       permalink = createPath(slug);
       break;
   }
-
   return definitivePermalink(permalink);
 };
 
 /** */
-export const getHomePermalink = (): string => getPermalink('/');
+export const getHomePermalink = (): string => getPermalink('/bighit111');
 
 /** */
 export const getBlogPermalink = (): string => getPermalink(BLOG_BASE);
