@@ -26,23 +26,21 @@ export interface Props {
 const { socialLinks, theme = 'light' } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative py-2 bg-[#272727]']}>
-  <div
-    class="relative mx-auto px-4 sm:px-6 dark:text-slate-300 intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
-  >
-    <div class="flex items-center justify-between">
-      <div class="md:flex md:items-center md:justify-between py-4">
+<footer class="relative py-1.5 bg-[#272727] h-[60px]">
+  <div class="relative mx-auto px-2 sm:px-4 dark:text-slate-300 h-full">
+    <div class="flex items-center justify-between h-full">
+      <div class="md:flex md:items-center md:justify-between">
         {
           socialLinks?.length ? (
-            <ul class="flex md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">
+            <ul class="flex">
               {socialLinks.map(({ ariaLabel, href, text, icon }) => (
                 <li>
                   <a
-                    class="t focus:outline-none focus:ring-4   rounded-lg text-sm p-2.5 inline-flex items-center"
+                    class="t focus:outline-none focus:ring-4 rounded-lg text-sm p-2 inline-flex items-center"
                     aria-label={ariaLabel}
                     href={href}
                   >
-                    {icon && <Icon name={icon} class="w-5 h-5" />}
+                    {icon && <Icon name={icon} class="w-3 h-3" />}
                     <Fragment set:html={text} />
                   </a>
                 </li>
@@ -53,14 +51,9 @@ const { socialLinks, theme = 'light' } = Astro.props;
           )
         }
       </div>
-      <!-- <div class="flex items-center gap-2">
-        <Icon name="twitter" class="rounded-full bg-black p-1 text-2xl" />
-        <Icon name="yt" class="rounded-full bg-black p-1 text-2xl" />
-        <Icon name="fb" class="rounded-full bg-black p-1 text-2xl" />
-      </div> -->
       <div>
-        <p class="text-right text-sm text-[#6b6b6b] mb-2">관련사이트</p>
-        <p class="text-right text-sm text-[#6b6b6b]">Copyright © 2022 Big Hit Music / HYBE. All Rights Reserved</p>
+        <p class="text-right text-xs text-[#6b6b6b] mb-2">관련사이트</p>
+        <p class="text-right text-xs text-[#6b6b6b]">Copyright © 2022 Big Hit Music / HYBE. All Rights Reserved</p>
       </div>
     </div>
   </div>

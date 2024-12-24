@@ -2,9 +2,10 @@
 import Layout from '~/layouts/Layout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
-import Announcement from '~/components/widgets/Announcement.astro';
+import Modal from '~/components/Modal.astro';
+import ListItem from '~/components/widgets/ListItem.astro';
 
-import { headerData, footerData } from '~/navigation';
+import { headerData, footerData, menuData } from '~/navigation';
 
 import type { MetaData } from '~/types';
 
@@ -17,7 +18,7 @@ const { metadata } = Astro.props;
 
 <Layout metadata={metadata}>
   <slot name="header">
-    <Header {...headerData} isSticky showRssFeed showToggleTheme />
+    <Header {...headerData} isFixed />
   </slot>
   <main>
     <slot />
@@ -25,4 +26,11 @@ const { metadata } = Astro.props;
   <slot name="footer">
     <Footer {...footerData} />
   </slot>
+
+  <Modal id="myModal">
+    <ListItem menuData={menuData} />
+  </Modal>
 </Layout>
+<script define:vars={{ menuData }}>
+  console.log(menuData, 'menuData');
+</script>
