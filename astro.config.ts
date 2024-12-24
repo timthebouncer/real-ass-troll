@@ -23,8 +23,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
-  site: 'https://timthebouncer.github.io',
-  base: '/bighit111',
+  
   integrations: [
     tailwind({
       applyBaseStyles: false,

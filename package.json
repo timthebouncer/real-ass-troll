@@ -1,8 +1,7 @@
 {
-  "homepage": "https://timthebouncer.github.io/bighit111",
-  "name": "bighit111",
+  "name": "bighit",
   "version": "1.0.0-beta.49",
-  "description": "AstroWind: A free template using Astro 5.0 and Tailwind CSS. Astro starter theme.",
+  "description": "BigHit111 korea korean artists",
   "type": "module",
   "private": true,
   "engines": {
