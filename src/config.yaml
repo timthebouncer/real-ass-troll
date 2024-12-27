@@ -1,5 +1,5 @@
 site:
-  name: BigHit
+  name: WUJIANHONG
   site: 'https://moonlit-zuccutto-b896f5.netlify.app'
   base: '/'
   trailingSlash: false
@@ -9,20 +9,20 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: BigHit
-    template: '%s — BigHit'
-  description: "BigHit111 - Your premier source for Korean artists, K-pop news, and entertainment updates. Discover the latest about Korean music and artists."
+    default: WUJIANHONG
+    template: '%s — WUJIANHONG'
+  description: "WUJIANHONG - Your premier source for Korean artists, K-pop news, and entertainment updates. Discover the latest about Korean music and artists."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: BigHit111
+    site_name: WUJIANHONG
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
-    description: "BigHit111 - Your premier source for Korean artists, K-pop news, and entertainment updates. Discover the latest about Korean music and artists."
+    description: "WUJIANHONG - Your premier source for Korean artists, K-pop news, and entertainment updates. Discover the latest about Korean music and artists."
 
 i18n:
   language: zh
