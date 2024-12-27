@@ -1,16 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Carousel from '~/components/widgets/Carousel.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import Modal from '~/components/Modal.astro';
+import ListItem from '~/components/widgets/ListItem.astro';
+
+import { menuData } from '~/navigation';
 
 const metadata = {
   title: 'BigHit',
@@ -25,14 +19,17 @@ import carouselImage4 from '~/assets/images/carousel/carousel-4.png';
 import carouselImage5 from '~/assets/images/carousel/carousel-5.png';
 
 const carousel = [
-  { id: 1, img: carouselImage, bg: 'bg-[#a5c8c8]' },
-  { id: 2, img: carouselImage2, bg: 'bg-[#f0f0f0]' },
-  { id: 3, img: carouselImage3, bg: 'bg-[#000000]' },
-  { id: 4, img: carouselImage4, bg: 'bg-[#97c3e2]' },
-  { id: 5, img: carouselImage5, bg: 'bg-[#000000]' },
+  { id: 1, img: carouselImage, bg: 'bg-[#a5c8c8]', title: 'Winter' },
+  { id: 2, img: carouselImage2, bg: 'bg-[#f0f0f0]', title: 'Happy' },
+  { id: 3, img: carouselImage3, bg: 'bg-[#000000]', title: 'San' },
+  { id: 4, img: carouselImage4, bg: 'bg-[#97c3e2]', title: 'MUGG' },
+  { id: 5, img: carouselImage5, bg: 'bg-[#000000]', title: 'GGUM' },
 ];
 ---
 
 <Layout metadata={metadata}>
   <Carousel carousel={carousel} />
 </Layout>
+<Modal id="carousel-modal">
+  <ListItem menuData={menuData} />
+</Modal>

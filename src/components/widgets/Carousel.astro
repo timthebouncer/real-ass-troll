@@ -46,6 +46,9 @@ const { carousel } = Astro.props;
           `}
           data-carousel-item
           data-carousel-id={item.id}
+          onclick={() => {
+            console.log('clicked');
+          }}
         >
           <div class="w-full h-full max-w-7xl mx-auto px-4">
             <Image
