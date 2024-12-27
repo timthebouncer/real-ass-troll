@@ -1,8 +1,8 @@
 ---
-import { SITE } from 'astrowind:config';
+import { Image } from 'astro:assets';
 import headerLogo from '~/assets/images/header/header-logo.png';
 ---
 
 <span>
-  <img src={headerLogo.src} alt="Logo" />
+  <Image src={headerLogo} alt="Logo" class="w-full h-full object-contain" />
 </span>
